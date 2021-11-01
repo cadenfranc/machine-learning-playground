@@ -45,7 +45,7 @@ random_forest = """
 
 The **Random Forest** is a *bootstrap aggregation* or *bagging* ensemble method, meaning that it is a collective average of many
 other Decision Trees (or a *forest*). In contrast to a Gradient Boosted Tree, a Random Forest creates multiple trees consecutively,
-and then returns a single averaged tree, instead of continually improving upon the same tree.
+and then returns a single averaged tree, instead of sequentially improving upon past trees.
 
     from sklearn.tree import RandomForestRegressor
 
@@ -60,7 +60,19 @@ For more information on how to implement a Random Forest in Python,
 [visit scikit-learn's documentation page.](https://scikit-learn.org/stable/modules/ensemble.html#forests-of-randomized-trees)
 """
 
+#why does noise over fit gbts
 gradient_boosting = """
+
+The **Gradient Boosted Tree** is a *boosting* ensemble method, meaning that it makes small, consecutive improvements from tree to tree
+instead of taking the collective average of a group of trees. In general, gradient boosting can achieve better results than a random forest
+when finely tuned, but are also more difficult to tune, and more prone to overfitting.
+
+    from sklearn.ensemble import GradientBoostedRegressor
+
+    gb = GradientBoostedRegressor()
+    gb.fit(X_train, y_train)
+    gb.predict(X_test)
+
 For more information on how to implement Gradient Boosting in Python, 
 [visit scikit-learn's documentation page.](https://scikit-learn.org/stable/modules/ensemble.html#gradient-tree-boosting)
 """
