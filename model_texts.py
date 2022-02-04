@@ -60,7 +60,7 @@ For more information on how to implement a Random Forest in Python,
 [visit scikit-learn's documentation page.](https://scikit-learn.org/stable/modules/ensemble.html#forests-of-randomized-trees)
 """
 
-#why does noise over fit gbts
+
 gradient_boosting = """
 
 The **Gradient Boosted Tree** is a *boosting* ensemble method, meaning that it makes small, consecutive improvements from tree to tree
@@ -78,26 +78,21 @@ For more information on how to implement Gradient Boosting in Python,
 """
 
 catboost = """
-For more information on how to implement CatBoost in Python, 
+Additional details and sample code coming soon. For more information on how to implement CatBoost in Python, 
 [visit catboost's documentation page.](https://catboost.ai/docs/concepts/python-usages-examples.html)
 """
 
 knn = """
-For more information on how to implement k-nearest Neighbors in Python, 
+Additional details and sample code coming soon. For more information on how to implement k-nearest Neighbors in Python, 
 [visit scikit-learn's documentation page.](https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbors-classification)
 """
 
 svm = """
-For more information on how to implement Support Vector Machines in Python, 
+Additional details and sample code coming soon. For more information on how to implement Support Vector Machines in Python, 
 [visit scikit-learn's documentation page.](https://scikit-learn.org/stable/modules/svm.html)
 """
 
-naive_bayes = """
-To be added at a later date.
-"""
-
 neural_network = """
-To be added at a later date.
 """
 
 texts = {
@@ -109,7 +104,6 @@ texts = {
     'CatBoost':catboost,
     'k-nearest Neighbors':knn,
     'Support Vector Machine':svm,
-    'Naive Bayes':naive_bayes,
     'Neural Network':neural_network
 }
 
